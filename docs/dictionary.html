@@ -11,7 +11,7 @@
 
 <meta name="author" content="Joschka Schwarz" />
 
-<meta name="date" content="2020-06-15" />
+<meta name="date" content="2020-11-24" />
 
 <title>Dictionary</title>
 
@@ -28,6 +28,17 @@
 <script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -405,7 +416,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Dictionary</h1>
 <h4 class="author">Joschka Schwarz</h4>
-<h4 class="date">2020-06-15</h4>
+<h4 class="date">2020-11-24</h4>
 
 </div>
 
@@ -493,8 +504,6 @@ df</code></pre>
 </ol>
 <pre class="r"><code>col_C  &lt;- c(TRUE, FALSE, FALSE, TRUE)
 df_new &lt;- rbind(df, col_C)</code></pre>
-<pre><code>## Warning in `[&lt;-.factor`(`*tmp*`, ri, value = FALSE): invalid factor level, NA
-## generated</code></pre>
 </div>
 <div id="slicing-and-extracting-data-indexing-vectors" class="section level2">
 <h2><span class="header-section-number">1.4</span> Slicing and extracting data indexing vectors</h2>
@@ -599,19 +608,19 @@ plot(x)</code></pre>
 <h2><span class="header-section-number">1.14</span> Distributions</h2>
 <p>rnorm() This function inserts a normal distribution.</p>
 <pre class="r"><code>rnorm(100, mean = 50, sd=2)</code></pre>
-<pre><code>##   [1] 46.78274 49.38994 53.01038 49.76762 44.07769 51.35309 47.42240 48.23284
-##   [9] 50.95567 50.38978 49.75886 49.22673 51.23885 48.97017 50.64159 46.77153
-##  [17] 51.93685 48.70363 47.76683 48.40199 48.59439 54.48211 46.55957 54.81429
-##  [25] 53.49048 48.23457 48.59659 52.33933 50.22493 49.35413 51.39139 47.37100
-##  [33] 49.99530 53.27518 51.33784 51.25962 49.61837 49.93194 47.98749 45.15027
-##  [41] 48.16975 51.39621 51.91270 46.19528 49.75680 49.15595 52.27812 49.55213
-##  [49] 49.25479 48.42452 47.93716 52.88109 50.58467 53.23251 50.62928 47.44772
-##  [57] 47.86661 49.93634 49.22777 51.01879 48.90837 52.06835 52.33097 51.22344
-##  [65] 48.35773 51.28297 48.25543 52.57541 49.78563 50.48597 48.92686 50.36341
-##  [73] 49.67059 49.10967 49.42807 45.98916 51.45803 50.09973 50.12206 49.56714
-##  [81] 51.53410 47.58476 48.55978 50.00721 44.71712 51.42221 47.85455 52.90958
-##  [89] 47.35914 50.97984 46.81993 52.34727 48.03497 48.35955 47.85168 51.65994
-##  [97] 49.63791 51.53545 47.07690 45.77965</code></pre>
+<pre><code>##   [1] 50.13588 49.26485 47.58960 50.82579 52.86122 51.21264 55.04230 50.25080
+##   [9] 51.50479 48.83312 50.57136 48.18158 48.80566 49.14533 51.40440 51.67633
+##  [17] 47.90687 50.24803 51.76774 51.67339 49.44893 54.48280 50.08651 49.03842
+##  [25] 50.76873 46.79974 51.06645 50.61088 45.47509 49.75900 53.41017 51.47474
+##  [33] 51.74428 48.98203 47.81415 50.97021 50.17419 47.23202 52.44638 51.91979
+##  [41] 55.68357 49.10870 48.07240 54.86851 49.79903 53.20558 48.72647 49.14117
+##  [49] 50.12321 48.21771 49.19904 49.08039 50.19725 44.93680 49.48910 50.83588
+##  [57] 52.53460 53.77035 51.16605 47.14326 46.74133 47.63967 53.64186 49.76793
+##  [65] 49.71341 50.50582 49.90538 49.64268 49.99285 48.66695 49.13260 47.71508
+##  [73] 47.77648 50.39408 51.99404 48.23789 52.22228 50.27019 45.69288 52.56994
+##  [81] 49.69961 49.67027 46.81599 46.74046 48.38936 51.09260 49.61618 50.16122
+##  [89] 45.36720 48.73369 50.14994 49.39573 46.45948 51.93131 51.24154 48.41427
+##  [97] 48.56367 50.74566 48.89841 49.54106</code></pre>
 </div>
 </div>
 
@@ -626,7 +635,7 @@ plot(x)</code></pre>
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -670,7 +679,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
